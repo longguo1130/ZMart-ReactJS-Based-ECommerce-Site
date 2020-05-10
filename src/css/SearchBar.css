@@ -1,0 +1,9 @@
+.SearchBar{
+  padding: 20px;
+  margin: auto;
+}
+
+.SearchBar-textfield{
+  border: 1px solid white;
+  width: 30%;
+}

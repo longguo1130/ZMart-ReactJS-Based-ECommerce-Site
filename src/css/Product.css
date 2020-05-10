@@ -1,0 +1,43 @@
+.Product{
+  padding: 10px;
+  padding-bottom: 20px;
+  margin: auto;
+  min-width: 147px;
+}
+
+.Product:hover{
+  
+}
+
+.Product-img{
+  font-size: 100px;
+  height: 45%;
+  margin-bottom: 2px;
+}
+
+.Product-title{
+  height: 20%;
+  margin-bottom: 0px;
+}
+
+
+.Product-price{
+  height: 10%;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.Product-buy{
+  padding: 4px;
+  margin-top: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.Product-category{
+  height: 10%;
+  margin-bottom: 1px;
+  
+  opacity: 0.8;
+  width: 100%;
+}

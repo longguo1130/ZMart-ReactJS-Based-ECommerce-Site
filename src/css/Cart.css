@@ -1,0 +1,36 @@
+.Cart{
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.Cart-title{
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/*Creates table with scrollable tbody*/
+tbody {
+  display:block;
+  height:190px;
+  overflow:auto;
+  padding: 10px;
+}
+thead,tfoot, tbody tr {
+  display:table;
+  width:100%;
+  table-layout:fixed;
+}
+
+thead {
+  width: calc( 100% - 1em )
+}
+table {
+  width:100%;
+}
+
+.Cart-checkout-button{
+  padding: 10px;
+  width: 75%;
+  margin:auto;
+}

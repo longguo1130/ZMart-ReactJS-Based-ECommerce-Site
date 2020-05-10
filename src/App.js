@@ -1,24 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import ThemeContextProvider from './contexts/ThemeContext';
+import TopItems from './components/TopItems';
+import ProductContextProvider from './contexts/ProductContext';
+import Cart from './components/Cart';
+import CartContextProvider from './contexts/CartContext';
+import SearchContextProvider from './contexts/SearchContext';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import SearchResults from './components/SearchResults';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <ThemeContextProvider>
+          <ProductContextProvider>
+            <CartContextProvider>
+              <SearchContextProvider>
+
+                <Header />
+                <div className="row" style={{display:'flex'}}>
+                  <TopItems />
+                  <Cart />
+                </div>
+
+                
+
+              </SearchContextProvider>
+            </CartContextProvider>
+          </ProductContextProvider>
+        </ThemeContextProvider>
+      </BrowserRouter>
     </div>
   );
 }
