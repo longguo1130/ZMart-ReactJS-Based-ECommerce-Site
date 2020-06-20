@@ -13,6 +13,11 @@ const Cart = () => {
 
   let cartTotal = 0;
 
+  const clearCart = () => {
+    alert("Thank you for shopping with ZMart!");
+    dispatchCart({type:'CLEAR_CART'});
+  }
+
   return (
     <div className="Cart col l4 m4 s4" style={{background: activeTheme.primary,color:activeTheme.text}}>
       <h3 className="flow-text Cart-title" style={{background: activeTheme.secondary}}>
@@ -41,7 +46,7 @@ const Cart = () => {
         </tbody>
         <tfoot>
           <tr>
-            <td colSpan="2"><div className="Cart-checkout-button" style={{background: activeTheme.secondary}}><i className="material-icons left" style={{fontSize:20}}>local_shipping</i> Checkout</div></td>
+            <td colSpan="2"><div className="Cart-checkout-button" style={{background: activeTheme.secondary,cursor:'pointer'}} onClick={clearCart}><i className="material-icons left" style={{fontSize:20}}>local_shipping</i> Checkout</div></td>
             
             
             <td>Gross Total:<br />GST:<br />Net Total:</td>

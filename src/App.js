@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import ThemeContextProvider from './contexts/ThemeContext';
 import TopItems from './components/TopItems';
+import AllItems from './components/AllItems';
 import ProductContextProvider from './contexts/ProductContext';
 import Cart from './components/Cart';
 import CartContextProvider from './contexts/CartContext';
@@ -25,6 +26,9 @@ function App() {
                   <Cart />
                 </div>
 
+                <div style={{marginRight:15}}>
+                <AllItems />
+                </div>
                 
 
               </SearchContextProvider>
